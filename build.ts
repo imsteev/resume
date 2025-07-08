@@ -6,7 +6,7 @@ interface ResumeData {
   toolsAndTechnologies: string[];
   education: Array<{
     institution: string;
-    date: string;
+    degree: string;
   }>;
   experience: Array<{
     title: string;
@@ -55,21 +55,21 @@ function generateResumeHTML(data: ResumeData, css: string): string {
       </header>
       
       <section class="section">
+        <h2>Education</h2>
+        ${data.education.map(edu => `
+          <div class="education-item">
+            <div class="institution">${edu.institution}</div>
+            <div class="degree">${edu.degree}</div>
+          </div>
+        `).join('')}
+      </section>
+      <section class="section">
         <h2>Tools & Technologies</h2>
         <div class="tech-grid">
           ${data.toolsAndTechnologies.map(tech => `<span class="tech-item">${tech}</span>`).join('')}
         </div>
       </section>
       
-      <section class="section">
-        <h2>Education</h2>
-        ${data.education.map(edu => `
-          <div class="education-item">
-            <div class="institution">${edu.institution}</div>
-            <div class="date">${edu.date}</div>
-          </div>
-        `).join('')}
-      </section>
       
       <section class="section">
         <h2>Experience</h2>

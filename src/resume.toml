@@ -1,5 +1,7 @@
 name = "Stephen Chung"
 email = "spchung95@gmail.com"
+github = "https://github.com/imsteev"
+linkedin = "https://www.linkedin.com/in/imsteev/"
 toolsAndTechnologies = [
     "TypeScript",
     "Go",
@@ -16,18 +18,18 @@ toolsAndTechnologies = [
 
 [[education]]
 institution = "Carnegie Mellon University"
-date = "2013 - 2018"
+degree = "B.S. and M.S. Electrical and Computer Engineering"
 
 [[experience]]
 title = "Founding Engineer"
-company = "Ply Health*"
+company = "Ply Health"
 date = "Dec 2024 - Jul 2025"
-note = "* The company pivoted from a provider credentialing service (B2B) to a patient advocacy platform (B2C)"
+note = "Note: the company pivoted from a provider credentialing service (B2B) to a patient advocacy platform (B2C)"
 
 [[experience.roles]]
-title = "Patient Advocacy Platform (Mar 2025 - Jul 2025)"
+title = "Product: Patient Advocacy (Mar 2025 - Jul 2025)"
 responsibilities = [
-    "Built single-page application from scratch, which flexibly supports a mission-critical insurance eligibility workflow",
+    "Built single-page application from scratch that serves as the first touchpoint in the patient onboarding funnel, handling mission-critical insurance eligibility checks",
     "Collaborated directly with CEO + CTO + design to rapidly iterate on patient funnel for better conversion",
     "Shipped a flexible patient note-taking system with an integrated time tracking module for accurate insurance billing and revenue collection",
     "Developed core React components that enable accurate appointment booking and availability management",
@@ -38,7 +40,7 @@ responsibilities = [
 ]
 
 [[experience.roles]]
-title = "Provider Credentialing Service (Dec 2024 - Mar 2025)"
+title = "Product: Credentialing Service (Dec 2024 - Mar 2025)"
 responsibilities = [
     "Built B2B tools to help healthcare practices credential their providers with top insurance companies, increasing their ability to accept a wide range of patients",
     "Diagnosed and fixed a disruptive latency issue, achieving an ~80% reduction in database CPU utilization",
@@ -54,8 +56,8 @@ title = "Software Engineer"
 company = "Silo"
 date = "Mar 2020 - Jul 2024"
 responsibilities = [
-    "Tech lead and founding member of the Accounting pod. Helped scale the accounting product from a simple Accounts Receivable module to a system that automates journal entries and synchronizes data to QuickBooks",
-    "Proactively shipped a data import tool that decreased the time-to-onboarding from multiple hours to <1hr",
+    "Tech lead and founding member of the Accounting pod. Helped scale the accounting product from a simple Accounts Receivable module to a system that automates journal entries, synchronizes data to QuickBooks, and perform bank reconciliations",
+    "Launched a data import tool that decreased the time-to-onboarding from multiple hours to <1hr",
     "Designed client-side state architecture of expense tracking system that manages >$200m of user's expenses",
     "Regularly participated in on-call rotation, collaborating with the support team to triage and fix customer issues",
     "Mentored junior engineers and helped onboard new team members. Wrote various SoP documents to share knowledge and best practices with the team",
@@ -81,10 +83,5 @@ description = [
 [[projects]]
 name = "Janitor"
 description = [
-    "A tool I created to automatically keep my desktop clean from miscellaneous screenshot",
-    "The program leverages system-native crontabs to periodically archive files",
+    "Program that leverages system-native crontabs to periodically archive files. I use this to keep my desktop clean",
 ]
-
-[[projects]]
-name = "Drex"
-description = ["Designed and built a web scraping tool to Fandom Wiki"]
